@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <h1>Tab</h1>
+        <nav>
+            <button onclick="changeHeader(event, 'pirmas')">Gyvūnai</button>
+            <button onclick="changeHeader(event, 'antras')">Bandymai</button>
+            <button onclick="changeHeader(event, 'trečias')">Trečias</button>
+        </nav>
+    </div>
+    <div class="tabs">
+    <main id="pirmas" class="tab">
+    <div class="container">
+        <div class="slider">
+            <div class="slider__slides">
+                <div class="test slider__slide active"><img src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                <p>Lokiai yra mūsų geriausi draugai (tik atsargiai jei alkani)</p>
+                </div>
+                <div class="test slider__slide"><img src="https://images.unsplash.com/photo-1527644702050-c947a80cdf38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80" alt="">
+                <p class="test">Spiralinių ragų antilopė (angl. The Greater Kudu) (Apmąsto savo gyvenimą).</p>
+                </div>
+                <div class="test slider__slide"><img src="https://images.unsplash.com/photo-1573920110893-d313eb7565aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                <p class="test">Arktiniai vilkai: Atrodo, kad tam, kuris fotografuoja, gali tekti greitai sprukti iš ten!</p>
+                </div>
+                <div class="slider__slide"><img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1177&q=80" alt="">
+                </div>
+                <div id="nav-button--prev" class="slider__nav-button"></div>
+                <div id="nav-button--next" class="slider__nav-button"></div>
+                <div class="slider__nav">
+                    <div class="slider__navlink active"></div>
+                    <div class="slider__navlink"></div>
+                    <div class="slider__navlink"></div>
+                    <div class="slider__navlink"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <main class="tab" id="antras">
+        <h3>Mygtukas</h3>
+        <form class="myg-container">
+            <label class="keitiklis">
+                <input type="checkbox">
+            </label>
+        </form>
+        <p>Būtų gerai padaryti, kad perjungtų šviesą, o galbūt įmanoma pertvarkyti viso
+            puslapio išvaizdą, elementus įjungus mygtuką.
+        </p>
+        <h3>Forma-mygtukai</h3>
+        <form class="form flex">
+            <div class="fRow flex">
+                <input type="radio" name="pasirinkimas" class="formos-input">
+                <label for="pasirinkimas 1" class="label">Pasirinkimas 1</label>
+            </div>
+            <div class="fRow flex">
+                <input type="radio" name="pasirinkimas" class="formos-input">
+                <label for="pasirinkimas 2" class="label">Pasirinkimas 2</label>
+            </div>
+        </form>
+        <p>Tokio stiliaus checkboxes galėtų būti naudojamos sudaryti gražesnę formą pildymui.</p>
+        <h3>Šiaip kietas</h3>
+        <button class="shiny"><a target="_blank" href="https://www.youtube.com/watch?v=5THqAY3u5oY&t=44s">Spindintis Mygtukas</a>
+            </button>
+    </main>
+    <div id="trecias" class="tab">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5THqAY3u5oY?start=48"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
